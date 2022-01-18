@@ -1,0 +1,47 @@
+.contenedor{
+    background-color:#f9f9f9;
+    width:100%;
+    padding:20px 0 20px 0;
+}
+
+h1{
+    text-align: center;
+    color: #2d2d2d;
+    margin: 20px;
+}
+
+#footer{
+    color: #E8F8F5;
+    width: 100%;
+    height: 100px;
+    background-color:#76D7C4;
+}
+
+.copyright{
+    color: #E8F8F5;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contacto,#orden,#servicios{
+    color:#1ABC9C;
+}
+
+#btnVolver{
+    color: #1ABC9C;
+    float:right;
+    font-size: 1.5em;
+}
+#btnVolver:hover{
+    color: #76D7C4;
+    float:right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.contenedor-slider{
+    background-color:#f9f9f9;
+    width:100%;
+    padding:20px 0 0px 0;
+}

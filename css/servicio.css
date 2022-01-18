@@ -1,0 +1,26 @@
+/*
+.card:hover {
+    width: 50%;
+    box-shadow: 1px 1px 2px #2d2d2d;
+    cursor: pointer;
+    padding:10px;
+    transform: scale(1.1);
+    transition: transform .5s;
+
+}*/
+
+#home img{
+    width: 100%;
+    margin-top:-50px;
+}
+
+#card1h{
+    width: 200px;
+    background-color: red;
+}
+
+#card2h{
+    width: 200px;
+    background-color: red;
+ 
+}

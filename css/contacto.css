@@ -1,0 +1,65 @@
+#row-contact{
+    display: flex;
+    width: 100%;
+    background-color:#76D7C4;
+    margin:auto;
+    align-items: center;
+}
+
+
+
+#campos-mensaje input{
+    border-left:0;
+    border-right: 0;
+    border-top: 0;
+    outline: none;
+    border-color:#E8F8F5;;
+    background-color:transparent;
+    color:#E8F8F5;;
+    width:70%;
+    text-align: center;
+}
+
+#btnMensaje{
+    width:50%;
+    margin:auto;
+}
+
+#btnMensaje button{
+    width:100%;
+    background-color:#17A589;
+    color: #E8F8F5;
+    margin-top: 10px;
+}
+
+#mensaje{
+    margin-top: 30px;
+    width: 91%;
+    height: 100px;
+    resize: none;
+    border:1px solid #E8F8F5;
+
+}
+
+#campos-mensaje{
+    width:50%;
+    color:#E8F8F5;
+    padding-left: 20px;
+}
+
+#campo-contacto{
+    width:50%;
+    background:#1ABC9C;
+    color:#E8F8F5;
+    border-left:5px solid white;
+    padding:60px 0 60px 0;
+}
+
+.texto{
+    font-size:1em;
+    text-align: center;
+}
+
+ul,li{
+    list-style: none;
+}

@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <title>Home</title>
+</head>
+<body>
+  
+  <div class="contenedor">
+    <div class="menu" id="row-menu">
+        <div class="col-4">
+          <a href="#home"><i class="fas fa-home"></i> Home</a>
+        </div>
+        <div class="col-4">
+          <a href="#orden">
+            <i class="fab fa-wpforms"></i> Generar Servicio
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="#contacto"><i class="fas fa-at"></i> Contactos</a>
+        </div>
+    </div>
+</div>
+<div class="contenedor-slider" id="home">
+  <img src="img/slider.jpg">
+</div>
+
+
+    <!--Datos Clientes-->
+    <h1 id="orden">Orden de Servicio<a href="#row-menu" id="btnVolver"><i class="fas fa-chevron-circle-up"></i></a></h1>
+    <div class="contenedor">
+    <div id="row" >
+      <div class="col-2" id="icon-form-client">
+        <i class="fas fa-user-tie"></i>
+    </div>
+    <div class="col-2" id="campos">
+    <form id="formulario" action="#" method="post">
+        <div class="rut">
+          <label for="rut">Rut</label>
+          <input type="text" name="rut" id="rut" style="width:63%"/> <span>-</span>
+          <input type="text" class="item" name="digito" id="digito" />
+          <div id="error"></div>
+        </div>
+        <div class="nombre">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" />
+        </div>
+        <div class="apellido">
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" />
+        </div>
+        <div class="direccion">
+          <label for="direccion">Direccion</label>
+          <input type="text" name="direccion" />
+        </div>
+        <div class="comuna">
+          <label>Comuna</label>
+          <select>
+            <option value="">Santiago</option>
+            <option value="">Estacion central</option>
+          </select>
+        </div>
+        </div>
+      </div>
+          <!--Datos Vehiculo-->
+          <br>
+          <div id="row">
+            <div class="col-2">
+              <div class="icon-form-veicle" id="icon-form-vehicle">
+                <i class="fas fa-car"></i>
+              </div>
+            </div>
+            <div class="col-2" id="campos">
+              <div class="tipoVehiculo">
+                <label>Tipo Vehiculo</label>
+                <select>
+                  <option value="">Furgon</option>
+                  <option value="">Automovil</option>
+                  <option value="">Camion</option>
+                  <option value="">Camioneta</option>
+                  <option value="">Moto</option>
+                </select>
+              </div>    
+              <div class="marca">
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" />
+              </div>
+            
+          <div class="modelo">
+              <label>Modelo</label>
+              <input type="text" name="modelo" />
+          </div>
+                  
+          <div class="acno">
+              <label>Año</label>
+              <input type="text" name="acno"/>
+          </div>
+          <div>
+              <label>Revisión Técnica</label>
+              <br>
+              <label>Si
+              <input type="radio" name="revision" value="Si" /></label>
+              <label >No
+              <input type="radio" name="revision" value="No" /></label>
+          </div>
+          </div>
+        </div>
+        <br>
+        <div id="row">
+          <div class="col-2" id="icon-form-services">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="col-2" id="valores">
+            <div>
+            <label>Lavado Interior Exteriror</label>
+           <input type="checkbox" name="interior_exterior" value="15000" id="valor_interior_exterior">$15.000
+            </div>
+            <br>
+            <div>
+            <label>Lavado Motor</label>
+            <input type="checkbox" name="motor" value="7000" id="valor_motor">$7.000
+            </div>
+            <br>
+            <label>Total: </label>
+            $<input  id="total" disabled>
+          </div>
+        </div>
+        <br>
+        <div id="row">
+          <div class="col-2" id="icon-form-manager">
+            <i class="far fa-address-card"></i>
+          </div>
+          <div class="col-2" id="encargado">
+            <label>Encargado</label>
+            <select>
+                <option value="">Sofia</option>
+                <option value="">Gerardo</option>
+                <option value="">Hector</option>
+                <option value="">Jose</option>
+                <option value="">Profesor</option>
+            </select>
+          </div>
+          </div>
+        <br>
+        <div id="btnEnviar">
+          <button type="submit" class="btn">Enviar</button>
+        </div>
+    </form>
+    </div>
+  </div>
+
+
+
+  <br>
+
+<h1 id="contacto">Contactar <a href="#row-menu" id="btnVolver"><i class="fas fa-chevron-circle-up"></i></a></h1>
+<div class="contenedor">
+<div id="row-contact">
+  <div class="col-2" id="campos-mensaje">
+      <h2 style="text-align:center;">Envianos un mensaje</h2>
+      <label>Nombre</label>
+      <input type="text" >
+      <label>Email</label>
+      <input type="email" >
+      <br>
+      <textarea name="mensaje" id="mensaje"></textarea>
+      <br>
+      <div id="btnMensaje">
+         <button type="submit" class="btn">Enviar</button>
+      </div>
+  </div>   
+  <div class="col-2" id="campo-contacto">
+      <h2 style="text-align:center;">Contacto</h2>
+      <p class="texto">Nuestro objetivo es crecer junto a la calidad de servicio. El mejor feedback lo obtenemos directamente de nuestros clientes</p>
+      <br>
+      <ul class="texto">
+        <li>lavaauto@hotmail.com</li>
+        <li>serviceauto@hotmail.com</li>
+        <li>autoclear@gmail.com</li>
+        <li>+56 9 3467 5689</li>
+      </ul>
+  </div>
+  </div>
+</div>
+<br>
+<div id="footer">
+  <ul>
+    <li>Nuestros clientes</li>
+    <li></li>
+  </ul>
+  <div class="copyright"><i class="far fa-copyright"> Derechos Reservados - 2022</i></div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
