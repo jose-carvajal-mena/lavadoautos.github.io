@@ -38,128 +38,124 @@
     <!--Datos Clientes-->
     <h1 id="orden">Orden de Servicio<a href="#row-menu" id="btnVolver"><i class="fas fa-chevron-circle-up"></i></a></h1>
     <div class="contenedor">
-    <div id="row" >
-      <div class="col-2" id="icon-form-client">
-        <i class="fas fa-user-tie"></i>
-    </div>
-    <div class="col-2" id="campos">
-    <form id="formulario" action="#" method="post">
-        <div class="rut">
-          <label for="rut">Rut</label>
-          <input type="text" name="rut" id="rut" style="width:63%"/> <span>-</span>
-          <input type="text" class="item" name="digito" id="digito" />
-          <div id="error"></div>
+      <div id="row">
+          <div class="col-2" id="icon-form-client">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="col-2" id="campos">
+            <form id="formulario" action="#" method="post">
+                <div class="rut">
+                  <label for="rut">Rut</label>
+                  <input type="text" name="rut" id="rut" style="width:63%"/> <span>-</span>
+                  <input type="text" class="item" name="digito" id="digito" />
+                  <div id="error"></div>
+                </div>
+                <div class="nombre">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" name="nombre" />
+                </div>
+                <div class="apellido">
+                  <label for="apellido">Apellido</label>
+                  <input type="text" name="apellido" />
+                </div>
+                <div class="direccion">
+                  <label for="direccion">Direccion</label>
+                  <input type="text" name="direccion" />
+                </div>
+                <div class="comuna">
+                  <label>Comuna</label>
+                  <select>
+                    <option value="">Santiago</option>
+                    <option value="">Estacion central</option>
+                  </select>
+                </div>
+          </div>
         </div>
-        <div class="nombre">
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" />
+            <!--Datos Vehiculo-->
+        <br>
+        <div id="row">
+          <div class="col-2">
+            <div class="icon-form-veicle" id="icon-form-vehicle">
+              <i class="fas fa-car"></i>
+            </div>
+          </div>
+        <div class="col-2" id="campos">
+          <div class="tipoVehiculo">
+            <label>Tipo Vehiculo</label>
+            <select>
+              <option value="">Furgon</option>
+              <option value="">Automovil</option>
+              <option value="">Camion</option>
+              <option value="">Camioneta</option>
+              <option value="">Moto</option>
+            </select>
+          </div>    
+          <div class="marca">
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" />
+          </div>
+        
+        <div class="modelo">
+            <label>Modelo</label>
+            <input type="text" name="modelo" />
         </div>
-        <div class="apellido">
-          <label for="apellido">Apellido</label>
-          <input type="text" name="apellido" />
+                
+        <div class="acno">
+            <label>Año</label>
+            <input type="text" name="acno"/>
         </div>
-        <div class="direccion">
-          <label for="direccion">Direccion</label>
-          <input type="text" name="direccion" />
-        </div>
-        <div class="comuna">
-          <label>Comuna</label>
-          <select>
-            <option value="">Santiago</option>
-            <option value="">Estacion central</option>
-          </select>
+        <div>
+            <label>Revisión Técnica</label>
+            <br>
+            <label>Si
+            <input type="radio" name="revision" value="Si" /></label>
+            <label >No
+            <input type="radio" name="revision" value="No" /></label>
         </div>
         </div>
-      </div>
-          <!--Datos Vehiculo-->
+        </div>
           <br>
           <div id="row">
-            <div class="col-2">
-              <div class="icon-form-veicle" id="icon-form-vehicle">
-                <i class="fas fa-car"></i>
-              </div>
+            <div class="col-2" id="icon-form-services">
+              <i class="fas fa-dollar-sign"></i>
             </div>
-            <div class="col-2" id="campos">
-              <div class="tipoVehiculo">
-                <label>Tipo Vehiculo</label>
-                <select>
-                  <option value="">Furgon</option>
-                  <option value="">Automovil</option>
-                  <option value="">Camion</option>
-                  <option value="">Camioneta</option>
-                  <option value="">Moto</option>
-                </select>
-              </div>    
-              <div class="marca">
-                <label for="marca">Marca</label>
-                <input type="text" name="marca" />
+            <div class="col-2" id="valores">
+              <div>
+              <label>Lavado Interior Exteriror</label>
+            <input type="checkbox" name="interior_exterior" value="15000" id="valor_interior_exterior">$15.000
               </div>
-            
-          <div class="modelo">
-              <label>Modelo</label>
-              <input type="text" name="modelo" />
-          </div>
-                  
-          <div class="acno">
-              <label>Año</label>
-              <input type="text" name="acno"/>
-          </div>
-          <div>
-              <label>Revisión Técnica</label>
               <br>
-              <label>Si
-              <input type="radio" name="revision" value="Si" /></label>
-              <label >No
-              <input type="radio" name="revision" value="No" /></label>
-          </div>
-          </div>
-        </div>
-        <br>
-        <div id="row">
-          <div class="col-2" id="icon-form-services">
-            <i class="fas fa-dollar-sign"></i>
-          </div>
-          <div class="col-2" id="valores">
-            <div>
-            <label>Lavado Interior Exteriror</label>
-           <input type="checkbox" name="interior_exterior" value="15000" id="valor_interior_exterior">$15.000
+              <div>
+              <label>Lavado Motor</label>
+              <input type="checkbox" name="motor" value="7000" id="valor_motor">$7.000
+              </div>
+              <br>
+              <label>Total: </label>
+              $<input  id="total" disabled>
             </div>
-            <br>
-            <div>
-            <label>Lavado Motor</label>
-            <input type="checkbox" name="motor" value="7000" id="valor_motor">$7.000
+          </div>
+          <br>
+          <div id="row">
+            <div class="col-2" id="icon-form-manager">
+              <i class="far fa-address-card"></i>
             </div>
-            <br>
-            <label>Total: </label>
-            $<input  id="total" disabled>
+            <div class="col-2" id="encargado">
+              <label>Encargado</label>
+              <select>
+                  <option value="">Sofia</option>
+                  <option value="">Gerardo</option>
+                  <option value="">Hector</option>
+                  <option value="">Jose</option>
+                  <option value="">Profesor</option>
+              </select>
+            </div>
+            </div>
+          <br>
+          <div id="btnEnviar">
+            <button type="submit" class="btn">Enviar</button>
           </div>
-        </div>
-        <br>
-        <div id="row">
-          <div class="col-2" id="icon-form-manager">
-            <i class="far fa-address-card"></i>
-          </div>
-          <div class="col-2" id="encargado">
-            <label>Encargado</label>
-            <select>
-                <option value="">Sofia</option>
-                <option value="">Gerardo</option>
-                <option value="">Hector</option>
-                <option value="">Jose</option>
-                <option value="">Profesor</option>
-            </select>
-          </div>
-          </div>
-        <br>
-        <div id="btnEnviar">
-          <button type="submit" class="btn">Enviar</button>
-        </div>
-    </form>
+      </form>
     </div>
-  </div>
-
-
-
   <br>
 
 <h1 id="contacto">Contactar <a href="#row-menu" id="btnVolver"><i class="fas fa-chevron-circle-up"></i></a></h1>
